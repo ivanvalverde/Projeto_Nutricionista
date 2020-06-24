@@ -1,0 +1,58 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.containerCabecalho {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.cabecalhoPrincipal {
+	background-color: #FFF;
+	padding: 20px 0;
+}
+
+.cabecalhoPrincipal-logo{
+	width: 20%;
+	height: 20%;
+	text-align: center;
+}
+
+.logo{
+	width: 50%;
+	height: 50%;
+}
+
+.cabecalhoPrincipal-nav-link{
+	font-size: 25px;
+}
+
+.cabecalhoPrincipal-nav{
+	width: 65%;
+}
+
+.conteudoPrincipal{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.instagram{
+	height: 2%;
+	width: 2%;
+}
+
+.whatsapp{
+	height: 2%;
+	width: 2%;
+}
+
+.telegram{
+	height: 2%;
+	width: 2%;
+}
+
+.logoRodape{
+	height: 10%;
+	width: 10%;
+}
