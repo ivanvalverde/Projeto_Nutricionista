@@ -37,17 +37,22 @@ body {
 	margin-bottom: 20px;
 }
 
-.icon{
-	width: 30px;
-	height: 30px;
-	margin: 0 15px 10px;
+.instagram{
+	height: 2%;
+	width: 2%;
+}
+
+.whatsapp{
+	height: 2%;
+	width: 2%;
+}
+
+.telegram{
+	height: 2%;
+	width: 2%;
 }
 
 .logoRodape{
+	height: 10%;
 	width: 10%;
-}
-
-.redesSociais{
-	display: flex;
-
 }
