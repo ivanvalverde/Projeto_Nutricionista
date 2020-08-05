@@ -1,0 +1,53 @@
+/* Estilização da header */
+
+.navBarLogo{
+    width: 250px;
+}
+
+.shadowHeader{
+    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/* Estilização do footer */
+
+.shadowFooter{
+    box-shadow: 0px -10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#social{
+    width: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa!important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footerLogo{
+    width: 250px;
+}
+
+
+/* Visualização Android */
+
+@media (max-width: 355px){
+
+    .navBarLogo{
+        width: 200px;
+    }
+
+
+
+
+
+
+}
+

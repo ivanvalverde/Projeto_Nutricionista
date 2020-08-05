@@ -1,0 +1,12 @@
+#social{
+    width: 40px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa!important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+

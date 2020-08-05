@@ -1,193 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julia Devens - Nutricionista</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 py-5 p-sm-5 shadowHeader">
+            <a class="navbar-brand mr-3 ml-sm-5 ml-md-1 flex-grow-1" href="#"><img class="navBarLogo" src="imgs/logo.jpeg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto d-flex justify-content-around flex-grow-1">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RECEITA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATOS</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <section class="content">
 
-<head lang="pt-br">
+        </section>
 
-    <meta charset="UTF-8">
-    <title>Julia Devens - Nutricionista</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="ProjetoNutricionista-style.css">
-    <link rel="stylesheet" href="ProjetoNutricionistaPosicionamento-style.css">
-
-</head>
-
-
-<body>
-
-    <header class="cabecalhoPrincipal">
-        <div class="containerCabecalho">
-            <h1 class="cabecalhoPrincipal-logo">
-
-                <img class="logo" src="logo.gif">
-
-            </h1>
-
-            <nav class="cabecalhoPrincipal-nav">
-
-                <a class="cabecalhoPrincipal-nav-link">Home</a>
-                <a class="cabecalhoPrincipal-nav-link">Sobre mim</a>
-                <a class="cabecalhoPrincipal-nav-link">Serviços</a>
-                <a class="cabecalhoPrincipal-nav-link">Conteúdo adicional</a>
-                <a class="cabecalhoPrincipal-nav-link">Contato</a>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-
-    <main class="conteudoPrincipal">
-
-        <div class="containerFlexBanner">
-
-            <img class="banner">
-
-        </div>
-
-
-        <div class="containerFlexServiços">
-
-            <!--Aqui nos serviços já deixei criada 1 div para cada Serviço, porém podemos fazer sem elas, quebrando linhas com flex a partir de certa altura-->
-
-            <div class="consulta">
-
-                <img class="imgServicos">
-                <p>Juntos, vamos avaliar seus objetivos, por que chegou até aqui, como chegou e aonde quer chegar. A
-                    partir daí, iniciaremos a sua busca por uma alimentação que se encaixe na sua rotina e nos seus
-                    objetivos.</p>
-                <button></button>
-
+        <footer class="fixed-bottom shadowFooter px-4 py-5 p-sm-5 d-flex flex-sm-row flex-column">
+            <div class="flex-grow-1 ">
+            <a class="navbar-brand mr-0 mr-lg-4" href="#"><img class="footerLogo" src="imgs/logo.jpeg" alt=""></a>
             </div>
 
-            <div class="grupoEmagrecimentoPresencial">
-
-                <img class="imgServicos">
-                <p>Já tentou inúmeras dietas, perder peso de várias formas, e não deu certo ou não conseguiu manter por
-                    muito tempo? Guiado por nutricionistas, o grupo de emagrecimento é realmente uma “virada de chave”,
-                    a motivação mútua e o contato com pessoas com objetivos em comum, faz toda a diferença.</p>
-                <button></button>
-
+            <div class="flex-grow-1 d-flex justify-content-center my-4 pl-md-3">Julia Nutricionista ©</div>
+            
+            <div class="social flex-grow-1 d-flex justify-content-end ml-0 ml-lg-5 pr-2">
+                <a class="mx-2" href="#"><img id="social" src="imgs/icone-whatsapp.png" alt=""></a>
+                <a class="mx-2" href="#"><img id="social" src="imgs/icone-telegram.png" alt=""></a>
+                <a class="mx-2" href="#"><img id="social" src="imgs/icone-instagram.png" alt=""></a>
             </div>
+        </footer>
+    
+    </body>
 
-            <div class="grupoEmagrecimentoRemoto">
-
-                <img class="imgServicos">
-                <p>Na versão online, ficamos juntos por 21 dias, com temas diários e tarefas que te ajudam a colocar em
-                    prática todo o conhecimento adquirido, desde o primeiro dia. Dê um start no seu emagrecimento,
-                    comece a mudar sua relação com a alimentação e retomar o controle das suas decisões.</p>
-                <button></button>
-
-            </div>
-
-            <div class="grupoEmagrecimentoRemoto">
-
-                <img class="imgServicos">
-                <p>Na versão online, ficamos juntos por 21 dias, com temas diários e tarefas que te ajudam a colocar em
-                    prática todo o conhecimento adquirido, desde o primeiro dia. Dê um start no seu emagrecimento,
-                    comece a mudar sua relação com a alimentação e retomar o controle das suas decisões.</p>
-                <button></button>
-
-            </div>
-
-
-
-            <div class="containerFlexSobre">
-
-                <div class="containerFlexTextosSobreMim">
-
-                    <p>Defensora de uma nutrição descomplicada, acredito no alcance dos objetivos através de uma
-                        alimentação saudável, com comida de verdade, que te traga resultados e, claro, seja gostosa!
-                    </p>
-                    <p>Sou formada em nutrição e mestre pela UFF, meu objetivo é te auxiliar da teoria à prática, na
-                        busca de uma alimentação equilibrada e sem terrorismo nutricional. Existem diversas maneiras de
-                        manter uma alimentação saudável e alcançar seu objetivos, meu papel é te ajudar a encontrar o
-                        caminho que funciona para você.</p>
-
-                </div>
-
-                <img class="imgEu">
-
-            </div>
-
-            <div class="containerFlexFormMapa">
-
-                <!--Peguei esse formulário na internet. Não está preenchido corretamente.-->
-
-                <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-                    <input type="hidden" name="recipient" value="testeiseuemail@gmail.com">
-                    <!-- Pode ser qualquer endereço de email -->
-                    <input type="hidden" name="redirect" value="http://seudominio">
-                    <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
-                    <input type="hidden" name="subject" value="teste de assunto"> <!-- Assunto da mensagem -->
-                    <input type="hidden" name="email" value="email@doseudominio">
-                    <!-- Deve ser uma conta de email ativa em seu domínio -->
-
-                    <p>
-                        Nome:<br />
-                        <input type="text" size="30" name="nome">
-                    </p>
-
-                    <p>
-                        E-mail:<br />
-                        <input type="text" size="30" name="replyto">
-                    </p>
-
-                    <p>
-                        Comentários:<br />
-                        <input type="text" size="35" name="Comentarios">
-                    </p>
-
-                    <p>
-                        <input type="submit" name="BTEnvia" value="Enviar">
-                        <input type="reset" name="BTApaga" value="Apagar"> </p>
-                </form>
-
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.797883277227!2d-43.17857488520052!3d-22.957669584985933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ff8f6e79343%3A0xb4db5dfc04c53949!2sRio%20Sul%20Center%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1592680952275!5m2!1spt-BR!2sbr"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-
-            </div>
-
-        </div>
-
-    </main>
-
-
-
-    <footer class="rodape">
-
-        <div class="rodapeConteudo">
-
-            <img class="logoRodape" src="logo.gif">
-
-            <p class="infoRodape">Julia Nutricionista</p>
-
-            <nav>
-                <ul class="redesSociais">
-                    <li><img class="instagram icon" src="icone-instagram.png"></li>
-                    <li><img class="whatsapp icon" src="icone-whatsapp.png"></li>
-                    <li><img class="telegram icon" src="icone-telegram.png"></li>
-                </ul>
-            </nav>
-
-        </div>
-
-
-        <div class="rodapePrincipal">
-
-        </div>
-
-
-
-    </footer>
-
-
-</body>
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 
 </html>
