@@ -64,6 +64,30 @@ footer{
 
 /* Visualização Android */
 
+@media (max-width: 1025px){
+
+    /* Visualização Header */
+
+    .navBarLogo{
+        width: 200px;
+    }
+
+    /* Visualização main */
+
+    .textAbout{
+        max-width: 40ch;
+        font-size: 21px;
+        line-height: 2.0;
+        margin-top: 10px;
+    }
+
+    .divTextAbout{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 @media (max-width: 769px){
 
     /* Visualização Header */
@@ -125,10 +149,6 @@ footer{
     }
 
     /* Visualização main */
-
-    
-
-
 
 }
 
