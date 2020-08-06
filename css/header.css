@@ -13,7 +13,6 @@
 
 .about{
     background-color: rgb(230, 230, 230);
-    margin: 70px 6%;
 }
 
 .imgCarousel{
@@ -22,18 +21,15 @@
 }
 
 .juliaPic{
-    width: 400px;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-right: 15%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .textAbout{
     max-width: 55ch;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 2.3;
-    margin-top: 8%;
-    margin-left: 10%;
 }
 
 
@@ -64,13 +60,77 @@ footer{
 }
 
 
+
+
 /* Visualização Android */
 
-@media (max-width: 355px){
+@media (max-width: 769px){
+
+    /* Visualização Header */
 
     .navBarLogo{
         width: 200px;
     }
 
+    /* Visualização main */
+
+    .textAbout{
+        max-width: 55ch;
+        font-size: 25px;
+        line-height: 1.8;
+    }
+    
+    .juliaPic{
+        max-width: 570px;
+    }
+
+    .divTextAbout{
+        display: flex;
+        justify-content: center;
+    }
+
 }
+
+
+@media (max-width: 426px){
+
+    /* Visualização Header */
+
+    .navBarLogo{
+        width: 200px;
+    }
+
+    /* Visualização main */
+
+    .textAbout{
+        max-width: 55ch;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    
+    .juliaPic{
+        max-width: 400px;
+    }
+
+
+}
+
+
+@media (max-width: 355px){
+
+    /* Visualização Header */
+
+    .navBarLogo{
+        width: 200px;
+    }
+
+    /* Visualização main */
+
+    
+
+
+
+}
+
+
 
