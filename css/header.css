@@ -11,9 +11,6 @@
 
 /* Estilização da main */
 
-.about{
-    background-color: rgb(230, 230, 230);
-}
 
 .imgCarousel{
     height: 600px;
@@ -153,4 +150,27 @@ footer{
 }
 
 
+
+/* Card */
+.cardWidth{
+    width: 30%;
+}
+
+/* sizes */
+.w-90{
+    width: 90%;
+}
+
+@media (max-width: 425px){
+
+    .cardWidth{
+        width: 100%;
+		margin: 3%;
+    }
+	
+}
+
+.colorDiv{
+	background-color: #eeeeee;
+}
 
