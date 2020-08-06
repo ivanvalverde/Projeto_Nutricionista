@@ -4,6 +4,7 @@
     width: 250px;
 }
 
+
 .shadowHeader{
     box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -29,10 +30,18 @@
     line-height: 2.3;
 }
 
+.colorDiv{
+	background-color: #eeeeee;
+}
 
 
+.cardWidth{
+    width: 30%;
+}
 
-
+.w-90{
+    width: 90%;
+}
 
 /* Estilização do footer */
 
@@ -133,6 +142,11 @@ footer{
         max-width: 400px;
     }
 
+    .cardWidth{
+        width: 100%;
+		margin: 3%;
+    }
+
 
 }
 
@@ -144,33 +158,7 @@ footer{
     .navBarLogo{
         width: 200px;
     }
-
-    /* Visualização main */
-
 }
 
 
-
-/* Card */
-.cardWidth{
-    width: 30%;
-}
-
-/* sizes */
-.w-90{
-    width: 90%;
-}
-
-@media (max-width: 425px){
-
-    .cardWidth{
-        width: 100%;
-		margin: 3%;
-    }
-	
-}
-
-.colorDiv{
-	background-color: #eeeeee;
-}
 
