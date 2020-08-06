@@ -9,6 +9,34 @@
 }
 
 
+/* Estilização da main */
+
+.about{
+    background-color: rgb(230, 230, 230);
+    margin: 70px 6%;
+}
+
+.imgCarousel{
+    height: 600px;
+    object-fit: cover;
+}
+
+.juliaPic{
+    width: 400px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-right: 15%;
+}
+
+.textAbout{
+    max-width: 55ch;
+    font-size: 25px;
+    line-height: 2.3;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+
 
 
 
@@ -43,11 +71,6 @@ footer{
     .navBarLogo{
         width: 200px;
     }
-
-
-
-
-
 
 }
 
