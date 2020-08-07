@@ -12,10 +12,26 @@
 
 /* Estilização da main */
 
+.chosenFontFamily{
+    
+    font-family: 'Montserrat', sans-serif;
+}
 
 .imgCarousel{
     height: 600px;
     object-fit: cover;
+}
+
+.map{
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
+.modalText{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .juliaPic{
@@ -28,6 +44,10 @@
     max-width: 55ch;
     font-size: 28px;
     line-height: 2.3;
+}
+
+.contacts{
+    cursor: pointer;
 }
 
 .colorDiv{
@@ -51,7 +71,13 @@
 
 #social{
     width: 30px;
+    transition: 1s;
 }
+
+#social:hover{
+    transform: scale(1.2);
+}
+
 footer{
     display: flex;
     justify-content: space-between;
