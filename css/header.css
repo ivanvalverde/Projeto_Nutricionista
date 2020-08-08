@@ -91,7 +91,13 @@ footer{
     width: 250px;
 }
 
+/* CSS Receitas */
 
+.imgsReceitas{
+    width: 20vw;
+}
+
+/* Fim CSS Receitas */
 
 
 /* Visualização Android */
@@ -145,6 +151,14 @@ footer{
         justify-content: center;
     }
 
+    /* CSS Receitas */
+
+    .imgsReceitas{
+        width: 40vw;
+    }
+
+    /* Fim CSS Receitas */
+
 }
 
 
@@ -172,6 +186,15 @@ footer{
         width: 100%;
 		margin: 3%;
     }
+
+    /* CSS Receitas */
+
+    .imgsReceitas{
+        width: 60vw;
+        margin:0 auto!important;
+    }
+
+    /* Fim CSS Receitas */
 
 
 }
