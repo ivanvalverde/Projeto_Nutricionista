@@ -1,6 +1,6 @@
 let nomeExibido = document.querySelector("#nomeExibido");
-let nomeFoto = document.querySelector("#extensaoFoto");
-let extensaoFoto = document.querySelector("#nomeDaFoto");
+let nomeFoto = document.querySelector("#nomeDaFoto");
+let extensaoFoto = document.querySelector("#extensaoFoto");
 let nome = document.querySelector("#nome");
 let ingredientes = document.querySelector("#ingredientes");
 let modoDePreparo = document.querySelector("#modoDePreparo");
@@ -13,6 +13,7 @@ let removeIngredientes = document.querySelector("#removeIngredientes");
 let etapasLista = document.querySelector("#etapasLista");
 let adicionarEtapa = document.querySelector("#adicionarEtapa");
 let removeEtapas = document.querySelector("#removeEtapas");
+let extensoes = document.querySelector("#extensoes");
 
 gerarCodigo.addEventListener("click",function(){
 
@@ -27,7 +28,7 @@ gerarCodigo.addEventListener("click",function(){
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body d-flex flex-column flex-sm-row">
-        <img src="Imgs/${nomeFoto.value}.${extensaoFoto.value}" class="mr-4 imgsReceitas">
+        <img src="Imgs/${nomeFoto.value}.${retornaExtensao()}" class="mr-4 imgsReceitas">
         <p class="my-4 my-sm-0"><span class="font-weight-bold">${nome.value}</span><br><br>
 
           <span class="font-weight-bold">Ingredientes:</span><br>
@@ -56,7 +57,7 @@ adicionarIngrediente.addEventListener("click", function(){
 });
 
 removeIngredientes.addEventListener("click", function(){
-  ingredientesLista.innerHTML = "";
+  ingredientesLista.removeChild(ingredientesLista.lastElementChild);
 });
 
 
@@ -68,5 +69,13 @@ adicionarEtapa.addEventListener("click", function(){
 });
 
 removeEtapas.addEventListener("click", function(){
-  etapasLista.innerHTML = "";
+  etapasLista.removeChild(etapasLista.lastElementChild);
 });
+
+function retornaExtensao(){
+  if(extensaoFoto.value != ""){
+    return extensaoFoto.value;
+  } else{
+    return extensoes.value;
+  }
+}

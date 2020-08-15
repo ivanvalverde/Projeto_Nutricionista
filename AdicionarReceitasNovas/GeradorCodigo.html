@@ -23,7 +23,13 @@
         <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
         <img src="ImgsGerarCodigos/NomeFoto.png">
 
-        <p style="font-size: 25px;">Extensão da imagem(jpg,png sem o ".")<span style="color:red;">*</span></p>
+        <p style="font-size: 25px;">Extensão da imagem<span style="color:red;">*</span></p>
+        <select id="extensoes">
+            <option value="jpg">jpg</option>
+            <option value="png">png</option>
+            <option value="gif">gif</option>
+        </select>
+        <span> caso não tenha na lista, escreva o formato (será ignorado o campo à esquerda se algo estiver escrito)</span>
         <input id="extensaoFoto" type="text">
         <br>
         <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
@@ -40,7 +46,7 @@
         <p style="text-decoration: underline;">Ingredientes a serem adicionados:</p><br>
         <ul id="ingredientesLista" style="text-align: initial"></ul>
         <button id="adicionarIngrediente">Adicionar Ingrediente</button>
-        <button id="removeIngredientes">Remova todos ingredientes</button>
+        <button id="removeIngredientes">Remova o último ingrediente</button>
         <br>
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/Ingredientes.png">
@@ -51,7 +57,7 @@
         <p style="text-decoration: underline;">Etapas a serem adicionadas:</p><br>
         <ol id="etapasLista" style="text-align: initial"></ol>
         <button id="adicionarEtapa">Adicionar Etapa</button>
-        <button id="removeEtapas">Remova as Etapas</button>
+        <button id="removeEtapas">Remova a última Etapa</button>
         <br>
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/modoDePreparo.png">
