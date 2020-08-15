@@ -8,8 +8,7 @@
 
     <body style="text-align: center;">
 
-        <h1>Preencha todos os campos abaixo e clique no botão para obter o código a ser colado em Receitas.html</h1>
-        <h2 style="color: red;">OBS: Para pular linhas, basta escrever &lt;br&gt; após a palavra desejada. Exemplo: Modo de preparo&lt;br&gt;- Cozinhar&lt;br&gt;- Assar</h2>
+        <h1>Preencha todos os campos abaixo e clique no botão "Gerar código" para obter o código a ser colado em Receitas.html</h1>
         <h2 style="color: red;">Os campos com * são obrigatórios</h2>
 
         <p style="font-size: 25px;">Nome da Receita exibido na lista<span style="color:red;">*</span></p>
@@ -18,16 +17,16 @@
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/TituloExibido.png">
 
-        <p style="font-size: 25px;">Nome da imagem<span style="color:red;">*</span></p>
+        <p style="font-size: 25px;">Nome da imagem (A imagem precisa estar dentro da pasta "Imgs")<span style="color:red;">*</span></p>
         <input id="nomeDaFoto" type="text">
         <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
         <img src="ImgsGerarCodigos/NomeFoto.png">
 
         <p style="font-size: 25px;">Extensão da imagem(jpg,png sem o ".")<span style="color:red;">*</span></p>
         <input id="extensaoFoto" type="text">
         <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
         <img src="ImgsGerarCodigos/extensaoFoto.png">
 
         <p style="font-size: 25px;">Nome da Receita(tudo maiúsculo)<span style="color:red;">*</span></p>
@@ -36,14 +35,23 @@
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/TituloReceita.png">
 
-        <p style="font-size: 25px;">Ingredientes (Não é necessário escrever a palavra Ingredientes novamente, e não esqueça do &lt;br&gt; para pular linhas)<span style="color:red;">*</span></p>
-        <input id="ingredientes" type="text">
+        <p style="font-size: 25px;">Ingredientes (Escreva o ingrediente e clique no botão para adicioná-lo a lista)<span style="color:red;">*</span></p>
+        <input id="ingredientes" type="text"><br>
+        <p style="text-decoration: underline;">Ingredientes a serem adicionados:</p><br>
+        <ul id="ingredientesLista" style="text-align: initial"></ul>
+        <button id="adicionarIngrediente">Adicionar Ingrediente</button>
+        <button id="removeIngredientes">Remova todos ingredientes</button>
         <br>
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/Ingredientes.png">
 
-        <p style="font-size: 25px;">Modo de preparo (Não é necessário escrever a palavra Modo de preparo novamente, e não esqueça do &lt;br&gt; para pular linhas)<span style="color:red;">*</span></p>
+        <p style="font-size: 25px;">Modo de preparo (Escreva a etapa sequencialmente e clique no botão para adicioná-la a lista)<span style="color:red;">*</span></p>
         <input id="modoDePreparo" type="text">
+        <br>
+        <p style="text-decoration: underline;">Etapas a serem adicionadas:</p><br>
+        <ol id="etapasLista" style="text-align: initial"></ol>
+        <button id="adicionarEtapa">Adicionar Etapa</button>
+        <button id="removeEtapas">Remova as Etapas</button>
         <br>
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/modoDePreparo.png">
@@ -56,7 +64,7 @@
 
         <br><br><br>
 
-        <button id="gerarCodigo">Gerar Código</button>
+        <button id="gerarCodigo" style="font-size: 30px; font-weight: bold; border: solid 3px black; cursor: pointer;">Gerar Código</button>
 
         <br>
         <br>

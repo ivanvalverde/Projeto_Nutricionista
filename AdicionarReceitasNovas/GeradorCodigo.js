@@ -7,6 +7,12 @@ let modoDePreparo = document.querySelector("#modoDePreparo");
 let infoExtra = document.querySelector("#infoExtra");
 let gerarCodigo = document.querySelector("#gerarCodigo");
 let codigoGerado = document.querySelector("#codigoGerado");
+let ingredientesLista = document.querySelector("#ingredientesLista");
+let adicionarIngrediente = document.querySelector("#adicionarIngrediente");
+let removeIngredientes = document.querySelector("#removeIngredientes");
+let etapasLista = document.querySelector("#etapasLista");
+let adicionarEtapa = document.querySelector("#adicionarEtapa");
+let removeEtapas = document.querySelector("#removeEtapas");
 
 gerarCodigo.addEventListener("click",function(){
 
@@ -25,10 +31,14 @@ gerarCodigo.addEventListener("click",function(){
         <p class="my-4 my-sm-0"><span class="font-weight-bold">${nome.value}</span><br><br>
 
           <span class="font-weight-bold">Ingredientes:</span><br>
-         ${ingredientes.value}<br><br>
+          <ul>
+         ${ingredientesLista.innerHTML}
+         </ul><br><br>
          
          <span class="font-weight-bold">Modo de preparo:</span><br>
-         ${modoDePreparo.value}<br><br>
+         <ol>
+         ${etapasLista.innerHTML}
+         </ol><br><br>
          
          ${infoExtra.value}
          </p>
@@ -36,4 +46,27 @@ gerarCodigo.addEventListener("click",function(){
     </div>
   </div>`
 
+});
+
+adicionarIngrediente.addEventListener("click", function(){
+  let novoIngrediente = document.createElement("li");
+  novoIngrediente.innerText = ingredientes.value;
+  ingredientesLista.appendChild(novoIngrediente);
+  ingredientes.value = "";
+});
+
+removeIngredientes.addEventListener("click", function(){
+  ingredientesLista.innerHTML = "";
+});
+
+
+adicionarEtapa.addEventListener("click", function(){
+  let novaEtapa = document.createElement("li");
+  novaEtapa.innerText = modoDePreparo.value;
+  etapasLista.appendChild(novaEtapa);
+  modoDePreparo.value = "";
+});
+
+removeEtapas.addEventListener("click", function(){
+  etapasLista.innerHTML = "";
 });
