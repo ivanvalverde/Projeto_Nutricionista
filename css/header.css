@@ -209,5 +209,14 @@ footer{
     }
 }
 
+@media (min-width: 1441px){
+    /* Visualização Large */
+    #navbarSupportedContent ul{
+
+        padding-right: 100px;
+    }
+
+}
+
 
 
