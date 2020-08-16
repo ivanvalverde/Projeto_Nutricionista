@@ -12,6 +12,14 @@
 
 /* Estilização da main */
 
+.body{
+    background-color:#ffffee;
+}
+
+.borderCarousel{
+    border-bottom: solid 3px white;
+}
+
 .chosenFontFamily{
     
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +59,11 @@
 }
 
 .colorDiv{
-	background-color: #eeeeee;
+    background-color: #f8f9fa;
+}
+
+.borderDiv{
+    border: solid 3px white;
 }
 
 
