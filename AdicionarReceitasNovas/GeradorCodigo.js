@@ -20,7 +20,7 @@ gerarCodigo.addEventListener("click",function(){
     codigoGerado.innerText = `<div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-block text-left colorBtn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           ${nomeExibido.value}
         </button>
       </h2>
@@ -29,20 +29,25 @@ gerarCodigo.addEventListener("click",function(){
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body d-flex flex-column flex-sm-row">
         <img src="Imgs/${nomeFoto.value}.${retornaExtensao()}" class="mr-4 imgsReceitas">
-        <p class="my-4 my-sm-0"><span class="font-weight-bold">${nome.value}</span><br><br>
+        <div class="d-flex flex-column">
+        <p class="my-4 my-sm-0 font-weight-bold">${nome.value}</p><br>
 
-          <span class="font-weight-bold">Ingredientes:</span><br>
-          <ul>
+          <div class="d-flex flex-lg-row flex-column">
+          <div class="d-flex flex-column mr-5">
+          <p class="font-weight-bold">Ingredientes:</p><br>
+          <ul class="ingredients">
          ${ingredientesLista.innerHTML}
-         </ul><br><br>
+         </ul></div><br><br>
          
-         <span class="font-weight-bold">Modo de preparo:</span><br>
-         <ol>
+         <div class="d-flex flex-column">
+         <p class="font-weight-bold">Modo de preparo:</p><br>
+         <ol class="prepare mr-4">
          ${etapasLista.innerHTML}
-         </ol><br><br>
-         
+         </ol></div></div><br>
+         <p>
          ${infoExtra.value}
          </p>
+         </div>
       </div>
     </div>
   </div>`
