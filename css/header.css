@@ -142,7 +142,6 @@ footer{
 
 /* Fim CSS Receitas */
 
-
 /* Visualização Android */
 
 @media (max-width: 1025px){
@@ -304,5 +303,15 @@ footer{
 
 }
 
+/* CSS Dicas */
 
+.card-dicas{
+    line-height: 2.0;
+}
 
+.imgsDicas{
+    width: 30%;
+    min-width: 182px;
+
+    max-width: 250px;
+}
