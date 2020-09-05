@@ -30,36 +30,18 @@
                       <a class="nav-link" href="#servicos">SERVICOS</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link contacts" href="#contatos">CONTATOS</a>
+                </li>
+                  <li class="nav-item">
                       <a class="nav-link" href="Receitas.html">RECEITAS</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link contacts" data-toggle="modal" data-target="#exampleModal">CONTATOS</a>
-                  </li>
+                    <a class="nav-link" href="">DICAS</a>
+                </li>
               </ul>
               </div>
           </nav>
       </header>
-        <!-- Modal dos contatos -->
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content bg-transparent border-0">
-              <div class="modal-header border-0">
-                <h5 class="modal-title text-white text-center" id="exampleModalLabel"><br></h5>
-              </div>
-              <div class="modal-body text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.295545844329!2d-43.114166785201576!3d-22.902467385013992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99834fceb9438d%3A0xc5d6c5ee76a0e020!2sHarmonitt%C3%A1%20Cl%C3%ADnica%20de%20Est%C3%A9tica%20e%20Acupuntura%20-%20Niter%C3%B3i%20RJ!5e0!3m2!1spt-BR!2sbr!4v1596832418100!5m2!1spt-BR!2sbr" class="border border-white map" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <p class="modalText mt-3"> E-mail: juliadevens.inside</p>
-                <div class="d-flex justify-content-center">
-                  <a class="mx-2" href="https://www.instagram.com/juliadevens.inside/"><img id="social" src="Imgs/icone-instagram-branco.png" alt=""></a>
-                  <a class="mx-2" href="https://t.me/joinchat/AAAAAFlk2qEw9PqNii7KCw"><img id="social" src="Imgs/icone-telegram-branco.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fim Modal -->
 
         <main class="content">
 
@@ -74,10 +56,10 @@
                     <img src="Imgs/refeicao.jpeg" class="d-block w-100 imgCarousel" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="Imgs/salada.jpeg" class="d-block w-100 imgCarousel" alt="...">
+                    <img src="Imgs/pratoSaudavel.jpg" class="d-block w-100 imgCarousel" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="Imgs/tomates.jpeg" class="d-block w-100 imgCarousel" alt="...">
+                    <img src="Imgs/ComidasSaudaveis.jpg" class="d-block w-100 imgCarousel" alt="...">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -115,38 +97,40 @@
                   <img class="card-img-top card border-bottom border-white" src="Imgs/marqueConsulta.JPG" alt="Card image cap">
                     <div class="card-body colorDiv">
                       <h5 class="card-title my-4">Consulta nutricional</h5>
-                      <a class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalConsulta">Saiba mais</a>
+                      <a class="btn btn-success mb-3" data-toggle="modal" data-target="#modalConsulta">Saiba mais</a>
                     </div>
                   </div>
                   <div class="card cardWidth  text-center borderDiv">
                     <img class="card-img-top border-bottom border-white" src="Imgs/grupoEma.jpg" alt="Card image cap">
                     <div class="card-body colorDiv">
                       <h5 class="card-title my-4">Grupo de emagrecimento</h5>
-                      <a class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalEmagrecimento">Saiba mais</a>
+                      <a class="btn btn-success mb-3" data-toggle="modal" data-target="#modalEmagrecimento">Saiba mais</a>
                     </div>
                   </div>
                   <div class="card cardWidth text-center borderDiv">
                     <img class="card-img-top border-bottom border-white" src="Imgs/grupoOnline.jpg" alt="Card image cap">
                     <div class="card-body colorDiv">
                       <h5 class="card-title my-4">Grupo de emagrec online</h5>
-                      <a class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalEmagrecimentoOnline">Saiba mais</a>
+                      <a class="btn btn-success mb-3" data-toggle="modal" data-target="#modalEmagrecimentoOnline">Saiba mais</a>
                     </div>
                   </div>
             </section>
               <!-- Modal Consulta -->
               
-              <div class="modal fade" id="modalConsulta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content bg-transparent border-0">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title text-white text-center" id="modalConsulta"><br></h5>
+              <div class="modal fade chosenFontFamily" id="modalConsulta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-weight-bold">Consulta Nutricional</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <div class="modal-body text-center mt-5 colorDiv">
-                      
-                      <p class="modalText mt-3 chosenFontFamily" style="color:#212529">
-                        Consulta: Juntos, vamos avaliar seus objetivos, por que chegou até aqui, como chegou e aonde quer chegar. A partir daí, iniciaremos a sua busca por uma alimentação que se encaixe na sua rotina e nos seus objetivos.
-                      </p>
-                      
+                    <div class="modal-body">
+                      <p class="spaceBetweenLines">Juntos, vamos avaliar seus objetivos, por que chegou até aqui, como chegou e aonde quer chegar. A partir daí, iniciaremos a sua busca por uma alimentação que se encaixe na sua rotina e nos seus objetivos.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -156,18 +140,20 @@
 
               <!-- Modal Emagrecimento -->
               
-              <div class="modal fade" id="modalEmagrecimento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content bg-transparent border-0">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title text-white text-center" id="modalEmagrecimento"><br></h5>
+              <div class="modal fade chosenFontFamily" id="modalEmagrecimento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-weight-bold">Grupo de Emagrecimento</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <div class="modal-body text-center mt-5 colorDiv">
-                      
-                      <p class="modalText mt-3 chosenFontFamily" style="color:#212529">
-                        Já tentou inúmeras dietas, perder peso de várias formas, e não deu certo ou não conseguiu manter por muito tempo? Guiado por nutricionistas, o grupo de emagrecimento é realmente uma “virada de chave”, a motivação mútua e o contato com pessoas com objetivos em comum, faz toda a diferença.
-                      </p>
-                      
+                    <div class="modal-body">
+                      <p class="spaceBetweenLines">Já tentou inúmeras dietas, perder peso de várias formas, e não deu certo ou não conseguiu manter por muito tempo? Guiado por nutricionistas, o grupo de emagrecimento é realmente uma “virada de chave”, a motivação mútua e o contato com pessoas com objetivos em comum, faz toda a diferença.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -177,18 +163,20 @@
 
               <!-- Modal Emagrecimento Online -->
               
-              <div class="modal fade" id="modalEmagrecimentoOnline" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content bg-transparent border-0">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title text-white text-center" id="modalEmagrecimentoOnline"><br></h5>
+              <div class="modal fade chosenFontFamily" id="modalEmagrecimentoOnline" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-weight-bold">Grupo de Emagrecimento Online</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <div class="modal-body text-center mt-5 colorDiv">
-                      
-                      <p class="modalText mt-3 chosenFontFamily" style="color:#212529">
-                        Na versão online, ficamos juntos por 21 dias, com temas diários e tarefas que te ajudam a colocar em prática todo o conhecimento adquirido, desde o primeiro dia. Dê um start no seu emagrecimento, comece a mudar sua relação com a alimentação e retomar o controle das suas decisões.
-                      </p>
-                      
+                    <div class="modal-body">
+                      <p class="spaceBetweenLines">Na versão online, ficamos juntos por 21 dias, com temas diários e tarefas que te ajudam a colocar em prática todo o conhecimento adquirido, desde o primeiro dia. Dê um start no seu emagrecimento, comece a mudar sua relação com a alimentação e retomar o controle das suas decisões.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -196,24 +184,50 @@
               
               <!-- Fim Modal -->
 
-            <section>
+            
+
+            <section id="contatos" class="d-flex flex-sm-row flex-column colorDiv m-5">
+
+              <div class="sizeDiv d-flex align-items-center justify-content-center">
+    
+                <iframe class="d-flex border border-dark map m-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.295545844329!2d-43.114166785201576!3d-22.902467385013992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99834fceb9438d%3A0xc5d6c5ee76a0e020!2sHarmonitt%C3%A1%20Cl%C3%ADnica%20de%20Est%C3%A9tica%20e%20Acupuntura%20-%20Niter%C3%B3i%20RJ!5e0!3m2!1spt-BR!2sbr!4v1596832418100!5m2!1spt-BR!2sbr" class="border border-white map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+              </div>
+    
+              <div class="m-auto pl-lg-5">
+    
+                <div class="d-flex my-4">
+                  <a class="mx-2"><img id="socialOutro" src="imgs/icone-local.png" alt=""></a>
+                  <p class="chosenFontFamily ml-sm-3 ml-1 textosMedia">R. Gavião Peixoto, 70 - sala 1208 - Icaraí, Niterói - RJ, 24230-100</p>                
+                </div>
+    
+                <div class="d-flex my-4">
+                  <a class="mx-2" href="https://t.me/joinchat/AAAAAFlk2qEw9PqNii7KCw"><img id="social" src="imgs/icone-telegram.png" alt=""></a>
+                  <p class="chosenFontFamily ml-sm-3 ml-1 textosMedia">Participe do meu canal do telegram!</p> 
+                </div>
+    
+                <div class="d-flex my-4">
+                  <a class="mx-2" href="https://www.instagram.com/juliadevens.inside/"><img id="social" src="imgs/icone-instagram.png" alt=""></a>
+                  <p class="chosenFontFamily ml-sm-3 ml-1 textosMedia">juliadevens.inside</p> 
+                </div>
+    
+                <div class="d-flex my-4">
+                  <a class="mx-2"><img id="socialOutro" src="imgs/icone-email.png" alt=""></a>
+                  <p class="chosenFontFamily ml-sm-3 ml-1 textosMedia">juliadevensnutricionista@gmail.com</p> 
+                </div>
                 
+              </div>
+    
             </section>
+                
+            
 
         </main>
 
-        <footer class="shadowFooter px-4 py-5 p-sm-5 d-flex flex-sm-row flex-column">
-            <div class="flex-grow-1 ">
-            <a class="navbar-brand mr-0 mr-lg-4" href="#"><img class="footerLogo" src="imgs/logo.jpeg" alt=""></a>
-            </div>
+        <footer class="shadowFooter pb-5">
 
-            <div class="flex-grow-1 d-flex justify-content-center my-4 pl-md-3 chosenFontFamily">Julia Devens © CRN-4 18100388</div>
-            
-            <div class="social flex-grow-1 d-flex justify-content-end ml-0 ml-lg-5 pr-2">
-                <a class="mx-2" href="#"><img id="social" src="imgs/icone-whatsapp.png" alt=""></a>
-                <a class="mx-2" href="#"><img id="social" src="imgs/icone-telegram.png" alt=""></a>
-                <a class="mx-2" href="#"><img id="social" src="imgs/icone-instagram.png" alt=""></a>
-            </div>
+          <div class="flex-grow-1 d-flex justify-content-center pt-5 chosenFontFamily text-center">Julia Devens<br>CRN-4 18100388</div>
+
         </footer>
 
         <div id="whatswidget-pre-wrapper" class="">

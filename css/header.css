@@ -16,6 +16,14 @@
     background-color:#b9d79b;
 }
 
+.sizeDiv{
+    width:50%;
+}
+
+.spaceBetweenLines{
+    line-height: 2;
+}
+
 .borderCarousel{
     border-bottom: solid 3px white;
 }
@@ -31,8 +39,8 @@
 }
 
 .map{
-    max-width: 60vw;
-    max-height: 60vh;
+    width: 60vw;
+    height: 50vh;
 }
 
 .modalText{
@@ -108,6 +116,11 @@
     transform: scale(1.2);
 }
 
+#socialOutro{
+    width: 30px;
+    cursor: context-menu;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -176,6 +189,12 @@ footer{
         max-width: 570px;
     }
 
+    .textosMedia{
+        max-width: 20ch;
+        word-wrap:break-word;
+        text-align: justify;
+    }
+
     .divTextAbout{
         display: flex;
         justify-content: center;
@@ -212,6 +231,16 @@ footer{
         max-width: 400px;
     }
 
+    .sizeDiv{
+        width:100%;
+    }
+
+    .textosMedia{
+        max-width: 15ch;
+        word-wrap:break-word;
+        text-align: justify;
+    }
+
     .cardWidth{
         width: 100%;
 		margin: 3%;
@@ -237,6 +266,33 @@ footer{
     .navBarLogo{
         width: 200px;
     }
+
+    /* Visualização main */
+
+    .textosMedia{
+        max-width: 20ch;
+        word-wrap:break-word;
+        text-align: justify;
+    }
+
+    .sizeDiv{
+        width:100%;
+    }
+}
+
+@media (max-width: 321px){
+
+    .textosMedia{
+        max-width: 14ch;
+        word-wrap:break-word;
+        text-align: justify;
+    }
+
+    .map{
+        width: 60vw;
+        height: 40vh;
+    }
+
 }
 
 @media (min-width: 1441px){

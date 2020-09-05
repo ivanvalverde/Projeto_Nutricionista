@@ -26,7 +26,7 @@ gerarCodigo.addEventListener("click",function(){
       </h2>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body d-flex flex-column flex-sm-row">
         <img src="Imgs/${nomeFoto.value}.${retornaExtensao()}" class="mr-4 imgsReceitas">
         <div class="d-flex flex-column">
