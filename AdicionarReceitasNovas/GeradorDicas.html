@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body style="text-align: center;">
+
+        <h1>Preencha todos os campos abaixo e clique no botão "Gerar código" para obter o código a ser colado em Dicas.html</h1>
+        <h2 style="color: red;">Os campos com * são obrigatórios</h2>
+
+        <p style="font-size: 25px;">Nome da dica exibida na lista<span style="color:red;">*</span></p>
+        <input id="nomeDicaExibida" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/TituloExibidoDicas.png">
+
+        <p style="font-size: 25px;">Nome da imagem (A imagem precisa estar dentro da pasta "Imgs")<span style="color:red;">*</span></p>
+        <input id="nomeDaFoto" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
+        <img src="ImgsGerarCodigos/NomeFoto.png">
+
+        <p style="font-size: 25px;">Extensão da imagem<span style="color:red;">*</span></p>
+        <select id="extensoes">
+            <option value="jpg">jpg</option>
+            <option value="png">png</option>
+            <option value="gif">gif</option>
+        </select>
+        <span> caso não tenha na lista, escreva o formato (será ignorado o campo à esquerda se algo estiver escrito)</span>
+        <input id="extensaoFoto" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
+        <img src="ImgsGerarCodigos/extensaoFoto.png">
+
+        <!-- <p style="font-size: 25px;">Nome da Receita(tudo maiúsculo)<span style="color:red;">*</span></p>
+        <input id="nome" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/TituloReceita.png"> -->
+
+        <!-- <p style="font-size: 25px;">Ingredientes (Escreva o ingrediente e clique no botão para adicioná-lo a lista)<span style="color:red;">*</span></p>
+        <input id="ingredientes" type="text"><br>
+        <p style="text-decoration: underline;">Ingredientes a serem adicionados:</p><br>
+        <ul id="ingredientesLista" style="text-align: initial"></ul>
+        <button id="adicionarIngrediente">Adicionar Ingrediente</button>
+        <button id="removeIngredientes">Remova o último ingrediente</button>
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/Ingredientes.png">
+
+        <p style="font-size: 25px;">Modo de preparo (Escreva a etapa sequencialmente e clique no botão para adicioná-la a lista)<span style="color:red;">*</span></p>
+        <input id="modoDePreparo" type="text">
+        <br>
+        <p style="text-decoration: underline;">Etapas a serem adicionadas:</p><br>
+        <ol id="etapasLista" style="text-align: initial"></ol>
+        <button id="adicionarEtapa">Adicionar Etapa</button>
+        <button id="removeEtapas">Remova a última Etapa</button>
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/modoDePreparo.png">
+
+        <p style="font-size: 25px;">Informação extra</p>
+        <input id="infoExtra" type="text">
+        <br>
+        <p style="text-decoration: underline;">O que irá mudar?</p><br>
+        <img src="ImgsGerarCodigos/InfoExtra.png"> -->
+
+        <br><br><br>
+
+        <button id="gerarCodigo" style="font-size: 30px; font-weight: bold; border: solid 3px black; cursor: pointer;">Gerar Código</button>
+
+        <br>
+        <br>
+
+        <p style="text-align:initial;" id="codigoGerado"></p>
+
+        <br><br>
+
+        <h1>Copie e cole no arquivo Dicas.html o código gerado na região exibida na imagem abaixo.</h1>
+        <br><br>
+
+        <img src="ImgsGerarCodigos/RegiaoDicas.png">
+
+
+        
+    </body>
+
+    <script src="GeradorCodigo.js"></script>
+</html>
