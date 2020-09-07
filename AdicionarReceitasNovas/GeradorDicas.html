@@ -17,56 +17,44 @@
         <p style="text-decoration: underline;">O que irá mudar?</p><br>
         <img src="ImgsGerarCodigos/TituloExibidoDicas.png">
 
-        <p style="font-size: 25px;">Nome da imagem (A imagem precisa estar dentro da pasta "Imgs")<span style="color:red;">*</span></p>
-        <input id="nomeDaFoto" type="text">
+        <p style="font-size: 25px;">Textos/Imagens Dicas<span style="color:red;">*</span></p>
+        <p style="color:red; margin: 0 20%; font-size: 25px; margin-bottom: 2%; text-align: justify;">OBS: Escreva o texto desejado e aperte o botão "Adicionar texto". Assim que o fizer, será adicionado um texto 
+        e o próximo a ser adicionado vai quebrar linha. O mesmo vale para imagens. É possível adicionar múltiplos textos e/ou imagens.</p>
+        <span>Texto:</span><input id="textoDicas" type="text" style="width: 70%">
+        <div style="display:flex; justify-content: center; margin: 2%">
+            <p>Imagem (Nome):</p><input id="nomeImagem" type="text">
+            <p style="margin-left: 1%">Extensão da imagem<span style="color:red;">*</span></p>
+            <select id="extensoes">
+                <option value="jpg">jpg</option>
+                <option value="jpeg">jpeg</option>
+                <option value="png">png</option>
+                <option value="gif">gif</option>
+            </select>
+            <p style="margin-left: 1%">Comprimento da imagem<span style="color:red;">*</span></p>
+            <select id="comprimento">
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+                <option value="100%">100%</option>
+            </select>
+        </div>
         <br>
-        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
-        <img src="ImgsGerarCodigos/NomeFoto.png">
+        <button id="adicionaTexto">Adicionar Texto</button>
+        <button id="adicionaImagem">Adicionar Imagem</button>
+        <button id="apagaTudo">Apagar Tudo</button>
+        <br>
 
-        <p style="font-size: 25px;">Extensão da imagem<span style="color:red;">*</span></p>
-        <select id="extensoes">
-            <option value="jpg">jpg</option>
-            <option value="png">png</option>
-            <option value="gif">gif</option>
-        </select>
-        <span> caso não tenha na lista, escreva o formato (será ignorado o campo à esquerda se algo estiver escrito)</span>
-        <input id="extensaoFoto" type="text">
-        <br>
-        <p style="text-decoration: underline;">O que é necessário colocar aqui?</p><br>
-        <img src="ImgsGerarCodigos/extensaoFoto.png">
+        <p style="font-size: 25px;">Visualize como ficará seu texto + imagens</p>
 
-        <!-- <p style="font-size: 25px;">Nome da Receita(tudo maiúsculo)<span style="color:red;">*</span></p>
-        <input id="nome" type="text">
-        <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
-        <img src="ImgsGerarCodigos/TituloReceita.png"> -->
+        <div id="visualizador" style="border: solid 2px black; width: 90%; margin: auto; min-height: 50px; margin-bottom: 2%;">
 
-        <!-- <p style="font-size: 25px;">Ingredientes (Escreva o ingrediente e clique no botão para adicioná-lo a lista)<span style="color:red;">*</span></p>
-        <input id="ingredientes" type="text"><br>
-        <p style="text-decoration: underline;">Ingredientes a serem adicionados:</p><br>
-        <ul id="ingredientesLista" style="text-align: initial"></ul>
-        <button id="adicionarIngrediente">Adicionar Ingrediente</button>
-        <button id="removeIngredientes">Remova o último ingrediente</button>
-        <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
-        <img src="ImgsGerarCodigos/Ingredientes.png">
+        </div>
 
-        <p style="font-size: 25px;">Modo de preparo (Escreva a etapa sequencialmente e clique no botão para adicioná-la a lista)<span style="color:red;">*</span></p>
-        <input id="modoDePreparo" type="text">
         <br>
-        <p style="text-decoration: underline;">Etapas a serem adicionadas:</p><br>
-        <ol id="etapasLista" style="text-align: initial"></ol>
-        <button id="adicionarEtapa">Adicionar Etapa</button>
-        <button id="removeEtapas">Remova a última Etapa</button>
-        <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
-        <img src="ImgsGerarCodigos/modoDePreparo.png">
 
-        <p style="font-size: 25px;">Informação extra</p>
-        <input id="infoExtra" type="text">
+        <p style="font-size: 25px;">O número da dica em Inglês (Ex: One - Exceções)<span style="color:red;">*</span></p>
+        <input id="hintNumber" type="text">
         <br>
-        <p style="text-decoration: underline;">O que irá mudar?</p><br>
-        <img src="ImgsGerarCodigos/InfoExtra.png"> -->
 
         <br><br><br>
 
@@ -88,5 +76,5 @@
         
     </body>
 
-    <script src="GeradorCodigo.js"></script>
+    <script src="GeradorDicas.js"></script>
 </html>

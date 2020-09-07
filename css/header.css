@@ -209,6 +209,16 @@ footer{
 
 }
 
+@media (max-width: 520px){
+    .imgsDicas{
+        margin: 5px auto !important;
+        float: none !important;
+        display: block !important;
+
+    }
+
+}
+
 
 @media (max-width: 426px){
 

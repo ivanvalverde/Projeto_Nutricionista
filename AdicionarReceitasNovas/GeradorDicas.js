@@ -1,81 +1,71 @@
 
-let nomeExibido = document.querySelector("#nomeExibido");
-let nomeFoto = document.querySelector("#nomeDaFoto");
-let extensaoFoto = document.querySelector("#extensaoFoto");
-let nome = document.querySelector("#nome");
-let ingredientes = document.querySelector("#ingredientes");
-let modoDePreparo = document.querySelector("#modoDePreparo");
-let infoExtra = document.querySelector("#infoExtra");
+let nomeExibido = document.querySelector("#nomeDicaExibida");
 let gerarCodigo = document.querySelector("#gerarCodigo");
 let codigoGerado = document.querySelector("#codigoGerado");
-let ingredientesLista = document.querySelector("#ingredientesLista");
-let adicionarIngrediente = document.querySelector("#adicionarIngrediente");
-let removeIngredientes = document.querySelector("#removeIngredientes");
-let etapasLista = document.querySelector("#etapasLista");
-let adicionarEtapa = document.querySelector("#adicionarEtapa");
-let removeEtapas = document.querySelector("#removeEtapas");
 let extensoes = document.querySelector("#extensoes");
+let hintNumber = document.querySelector("#hintNumber");
+let adicionaTexto = document.querySelector("#adicionaTexto");
+let adicionaImagem = document.querySelector("#adicionaImagem");
+let textoDicas = document.querySelector("#textoDicas");
+let nomeImagem = document.querySelector("#nomeImagem");
+let visualizador = document.querySelector("#visualizador");
+let apagaTudo = document.querySelector("#apagaTudo");
+let comprimento = document.querySelector("#comprimento");
+let guardaTexto = "";
 
 gerarCodigo.addEventListener("click",function(){
 
   codigoGerado.innerText = `
-  <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left colorBtn" type="button" data-toggle="collapse"
-              data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              ${nomeDica.value}
-            </button>
-          </h2>
-        </div>
-
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-dicas p-3 d-flex flex-column ">
-            <p>
-              “comer de 3 em 3 horas”, “dieta low carb”, “dieta do ovo”, “jejum intermitente”, “não não, é comer só
-              quando tem fome”….complete a frase como quiser, mas saiba de uma coisa: pode ser que amanhã nada disso
-              mais “vale”!
-            </p>
-            
-            <img src="./Imgs/dicasModa.jpg" alt="interrogação" class="w-100 p-5 align-self-center imgsDicasTwo">
-
-            <p class="font-weight-bold mr-auto">
-              Julia Devens
-            </p>
+  <div class="accordion w-100" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="heading${hintNumber.value}">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left colorBtn" type="button" data-toggle="collapse"
+                data-target="#collapse${hintNumber.value}" aria-expanded="true" aria-controls="collapse${hintNumber.value}">
+                ${nomeExibido.value}
+              </button>
+            </h2>
+          </div>
+          <div id="collapse${hintNumber.value}" class="collapse" aria-labelledby="heading${hintNumber.value}" data-parent="#accordionExample">
+          <br>
+          <div class="card-dicas p-3 d-flex flex-column">
+          ${guardaTexto}
+          </div>
+          <div class="card-dicas p-3">
+              
+              <p class="font-weight-bold mr-auto">
+                Julia Devens
+              </p>
+          </div>
           </div>
         </div>
-      </div>
   `
 
 });
 
-adicionarIngrediente.addEventListener("click", function(){
-  let novoIngrediente = document.createElement("li");
-  novoIngrediente.innerText = ingredientes.value;
-  ingredientesLista.appendChild(novoIngrediente);
-  ingredientes.value = "";
+adicionaTexto.addEventListener("click", function(){
+  let pulaLinha = document.createElement("br");
+  let pulaLinhaAux = document.createElement("p");
+
+  guardaTexto += `<p>${textoDicas.value}</p><br>`;
+  visualizador.innerHTML+= textoDicas.value;
+  visualizador.appendChild(pulaLinha);
+  visualizador.appendChild(pulaLinhaAux);
+  textoDicas.value = "";
 });
 
-removeIngredientes.addEventListener("click", function(){
-  ingredientesLista.removeChild(ingredientesLista.lastElementChild);
+adicionaImagem.addEventListener("click", function(){
+  let pulaLinha = document.createElement("br");
+  let pulaLinhaAux = document.createElement("p");
+
+  guardaTexto += `<img src="Imgs/${nomeImagem.value}.${extensoes.value}" style="width:${comprimento.value}; margin: auto;"><br>`;
+  visualizador.innerHTML+= `<img src="../Imgs/${nomeImagem.value}.${extensoes.value}" style="width:${comprimento.value}; margin: auto;"><br>`;
+  visualizador.appendChild(pulaLinha);
+  visualizador.appendChild(pulaLinhaAux);
+  textoDicas.value = "";
 });
 
-
-adicionarEtapa.addEventListener("click", function(){
-  let novaEtapa = document.createElement("li");
-  novaEtapa.innerText = modoDePreparo.value;
-  etapasLista.appendChild(novaEtapa);
-  modoDePreparo.value = "";
+apagaTudo.addEventListener("click", function(){
+  guardaTexto= "";
+  visualizador.innerHTML= "";
 });
-
-removeEtapas.addEventListener("click", function(){
-  etapasLista.removeChild(etapasLista.lastElementChild);
-});
-
-function retornaExtensao(){
-  if(extensaoFoto.value != ""){
-    return extensaoFoto.value;
-  } else{
-    return extensoes.value;
-  }
-}

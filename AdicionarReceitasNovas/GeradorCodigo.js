@@ -14,19 +14,20 @@ let etapasLista = document.querySelector("#etapasLista");
 let adicionarEtapa = document.querySelector("#adicionarEtapa");
 let removeEtapas = document.querySelector("#removeEtapas");
 let extensoes = document.querySelector("#extensoes");
+let recipeNumber = document.querySelector("#recipeNumber");
 
 gerarCodigo.addEventListener("click",function(){
 
     codigoGerado.innerText = `<div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header" id="heading${recipeNumber.value}">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left colorBtn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-block text-left colorBtn" type="button" data-toggle="collapse" data-target="#collapse${recipeNumber.value}" aria-expanded="true" aria-controls="collapse${recipeNumber.value}">
           ${nomeExibido.value}
         </button>
       </h2>
     </div>
 
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapse${recipeNumber.value}" class="collapse" aria-labelledby="heading${recipeNumber.value}" data-parent="#accordionExample">
       <div class="card-body d-flex flex-column flex-sm-row">
         <img src="Imgs/${nomeFoto.value}.${retornaExtensao()}" class="mr-4 imgsReceitas">
         <div class="d-flex flex-column">
