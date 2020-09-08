@@ -52,7 +52,7 @@
 
 .juliaPic{
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
 }
 
@@ -208,6 +208,15 @@ footer{
     /* Fim CSS Receitas */
 
 }
+
+@media (max-width: 578px){
+    .sizeDiv{
+        width:100%;
+    }
+
+}
+
+
 
 @media (max-width: 520px){
     .imgsDicas{
